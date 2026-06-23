@@ -1,0 +1,9 @@
+{
+  "name": "Go Technical Test",
+  "image": "mcr.microsoft.com/devcontainers/go:1.22",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
+    }
+  }
+}
