@@ -10,11 +10,15 @@ Implement the functions in `exercises.go` and (optionally) `bonus.go`. Tests are
 # Run all tests
 go test ./...
 
+# Run a single test by name (useful while implementing one function at a time)
+go test -run TestSum .
+go test -run TestFilter .
+
 # Run with details on which tests pass/fail
 go test -v .
 ```
 
-You are done when `go test ./...` shows `ok`.
+Work function by function: implement one, run its test with `-run`, then move to the next. You are done when `go test ./...` shows `ok`.
 
 ## Exercises (`exercises.go`)
 
@@ -35,9 +39,6 @@ If you finish early, implement these:
 | Function | Description |
 |---|---|
 | `Unique(nums []int) []int` | Remove duplicates, preserving order of first occurrence |
-| `ReverseWords(s string) string` | Reverse the order of words in a sentence |
-| `IsPalindrome(s string) bool` | Check if a string is a palindrome (alphanumeric only, case-insensitive) |
-| `MostExpensiveByCategory(products []Product) map[string]Product` | Find the priciest product per category |
 | `Chunk(nums []int, size int) [][]int` | Split a slice into consecutive sub-slices of `size` elements |
 
 ## Rules
